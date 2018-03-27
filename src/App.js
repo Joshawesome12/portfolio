@@ -6,10 +6,6 @@ class App extends Component {
     super(props);
     this.state = {}
 
-    // boxClick() => {
-    //
-    // }
-
   }
   render() {
     return (
@@ -18,6 +14,7 @@ class App extends Component {
         <header className="App-header">
           <img className="me" src={require('./resources/me.JPG')}/>
           <div className="titles">
+          <img className="coffee" src={require('./resources/coffee.gif')}/>
           <h1 className="App-title">Joshua Pawlik</h1>
           <h3 className="App-subTitle">Full Stack Software Engineer</h3>
           </div>
@@ -35,8 +32,8 @@ class App extends Component {
         </header>
 
         {/* <p className="App-intro"></p> */}
-        <div className="body">
-
+        <div className="skills">
+          {/* <h1 className="test">test</h1> */}
         </div>
         {/* <div className="box"> </div> */}
       </div>
