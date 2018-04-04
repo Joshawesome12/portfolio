@@ -41,16 +41,47 @@ class App extends Component {
           <h1 className='skills-title'>Skills</h1>
 
           <div className='skill_icons'>
-            <img className='html-img' src={require('./resources/icons/icon_html.png')}/>
-            <img className='css-img' src={require('./resources/icons/icon_css.png')}/>
-            <img className='javascript-img' src={require('./resources/icons/javascript.jpeg')}/>
-            <img className='jquery-img' src={require('./resources/icons/icon_jquery.png')}/>
-            <img className='react-img' src={require('./resources/icons/icon_react.png')}/>
-            <img className='angular-img' src={require('./resources/icons/icon_angularjs.png')}/>
-            <img className='redux-img' src={require('./resources/icons/icon_redux.png')}/>
-            <img className='node-img' src={require('./resources/icons/icon_node.png')}/>
-            <img className='mysql-img' src={require('./resources/icons/icon_mysql.png')}/>
-            <img className='sass-img' src={require('./resources/icons/icon_sass.png')}/>
+            <div>
+              <h1>HTML</h1>
+              <img className='html-img' src={require('./resources/icons/icon_html.png')}/>
+            </div>
+            <div>
+              <h1>CSS</h1>
+              <img className='css-img' src={require('./resources/icons/icon_css.png')}/>
+            </div>
+            <div>
+              <h1>Javascript</h1>
+              <img className='javascript-img' src={require('./resources/icons/javascript.jpeg')}/>
+            </div>
+            <div>
+              <h1>jQuery</h1>
+              <img className='jquery-img' src={require('./resources/icons/icon_jquery.png')}/>
+            </div>
+            <div>
+              <h1>ReactJS</h1>
+              <img className='react-img' src={require('./resources/icons/icon_react.png')}/>
+            </div>
+            <div>
+              <h1>AngularJS</h1>
+              <img className='angular-img' src={require('./resources/icons/icon_angularjs.png')}/>
+            </div>
+            <div>
+              <h1>Redux</h1>
+              <img className='redux-img' src={require('./resources/icons/icon_redux.png')}/>
+            </div>
+            <div>
+              <h1>Node.js</h1>
+              <img className='node-img' src={require('./resources/icons/icon_node.png')}/>
+            </div>
+            <div>
+              <h1>MySQL</h1>
+              <img className='mysql-img' src={require('./resources/icons/icon_mysql.png')}/>
+            </div>
+            <div>
+              <h1>SCSS</h1>
+              <img className='sass-img' src={require('./resources/icons/icon_sass.png')}/>
+            </div>
+
           </div>
 
         </div>
@@ -82,13 +113,6 @@ class App extends Component {
            </div>
          </a>
          </div>
-
-         {/* <div class="container">
-          <img src={require('./resources/campfire.png')} class="image"/>
-          <div class="overlay">
-            <div class="text">Hello World</div>
-          </div>
-        </div> */}
 
          </div>
 
