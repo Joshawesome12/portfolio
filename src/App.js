@@ -42,6 +42,10 @@ class App extends Component {
 
           <div className='skill_icons'>
             <div>
+              <h1>Javascript</h1>
+              <img className='javascript-img' src={require('./resources/icons/javascript.jpeg')}/>
+            </div>
+            <div>
               <h1>HTML</h1>
               <img className='html-img' src={require('./resources/icons/icon_html.png')}/>
             </div>
@@ -50,8 +54,8 @@ class App extends Component {
               <img className='css-img' src={require('./resources/icons/icon_css.png')}/>
             </div>
             <div>
-              <h1>Javascript</h1>
-              <img className='javascript-img' src={require('./resources/icons/javascript.jpeg')}/>
+              <h1>SCSS</h1>
+              <img className='sass-img' src={require('./resources/icons/icon_sass.png')}/>
             </div>
             <div>
               <h1>jQuery</h1>
@@ -62,12 +66,12 @@ class App extends Component {
               <img className='react-img' src={require('./resources/icons/icon_react.png')}/>
             </div>
             <div>
-              <h1>AngularJS</h1>
-              <img className='angular-img' src={require('./resources/icons/icon_angularjs.png')}/>
-            </div>
-            <div>
               <h1>Redux</h1>
               <img className='redux-img' src={require('./resources/icons/icon_redux.png')}/>
+            </div>
+            <div>
+              <h1>AngularJS</h1>
+              <img className='angular-img' src={require('./resources/icons/icon_angularjs.png')}/>
             </div>
             <div>
               <h1>Node.js</h1>
@@ -76,10 +80,6 @@ class App extends Component {
             <div>
               <h1>MySQL</h1>
               <img className='mysql-img' src={require('./resources/icons/icon_mysql.png')}/>
-            </div>
-            <div>
-              <h1>SCSS</h1>
-              <img className='sass-img' src={require('./resources/icons/icon_sass.png')}/>
             </div>
 
           </div>
