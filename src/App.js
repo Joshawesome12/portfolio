@@ -7,6 +7,8 @@ class App extends Component {
   //   this.state = {}
   //
   // }
+
+
   render() {
     return (
       <div className="App">
@@ -36,16 +38,16 @@ class App extends Component {
           <h1 className='skills-title'>Skills</h1>
 
           <div className='skill_icons'>
-            <img className='html-img' src={require('./resources/icon_html.png')}/>
-            <img className='css-img' src={require('./resources/icon_css.png')}/>
-            <img className='javascript-img' src={require('./resources/javascript.jpeg')}/>
-            <img className='jquery-img' src={require('./resources/icon_jquery.png')}/>
-            <img className='react-img' src={require('./resources/icon_react.png')}/>
-            <img className='angular-img' src={require('./resources/icon_angularjs.png')}/>
-            <img className='redux-img' src={require('./resources/icon_redux.png')}/>
-            <img className='node-img' src={require('./resources/icon_node.png')}/>
-            <img className='mysql-img' src={require('./resources/icon_mysql.png')}/>
-            <img className='sass-img' src={require('./resources/icon_sass.png')}/>
+            <img className='html-img' src={require('./resources/icons/icon_html.png')}/>
+            <img className='css-img' src={require('./resources/icons/icon_css.png')}/>
+            <img className='javascript-img' src={require('./resources/icons/javascript.jpeg')}/>
+            <img className='jquery-img' src={require('./resources/icons/icon_jquery.png')}/>
+            <img className='react-img' src={require('./resources/icons/icon_react.png')}/>
+            <img className='angular-img' src={require('./resources/icons/icon_angularjs.png')}/>
+            <img className='redux-img' src={require('./resources/icons/icon_redux.png')}/>
+            <img className='node-img' src={require('./resources/icons/icon_node.png')}/>
+            <img className='mysql-img' src={require('./resources/icons/icon_mysql.png')}/>
+            <img className='sass-img' src={require('./resources/icons/icon_sass.png')}/>
           </div>
 
         </div>
@@ -54,12 +56,38 @@ class App extends Component {
 
           <h1 className='projects-title'>Projects</h1>
 
-          {/* <div class="w3-content w3-display-container">
-            <img class="mySlides" src={require('./resources/icon_mysql.png')}/>
-            <img class="mySlides" src={require('./resources/icon_html.png')}/>
-            <img class="mySlides" src={require('./resources/icon_css.png')}/>
-            <img class="mySlides" src={require('./resources/icon_react.png')}/>
-         </div> */}
+         <div className='project-imgs'>
+
+           <div className='data-world'>
+             <h3 className='data-world-title'>dataset.tools</h3>
+             <div className='container'>
+               <img src={require('./resources/data.world.png')} className='data-world-img'/>
+               <div class="overlay">
+                 <div class="text">A electron desktop app that lets you easily download and upload your datasets from Data.World without ever having to open your browser.</div>
+               </div>
+             </div>
+         </div>
+
+         <div className='campfire'>
+           <h3 className='campfire-title'>Campfire</h3>
+           <a href='http://www.campfireonline.net' className="campfire-link">
+           <div className='container'>
+             <img src={require('./resources/campfire.png')} className='campfire-img'/>
+             <div class="overlay">
+               <div class="text">A storytelling app that allows users to create playful, community-driven stories</div>
+             </div>
+           </div>
+         </a>
+         </div>
+
+         {/* <div class="container">
+          <img src={require('./resources/campfire.png')} class="image"/>
+          <div class="overlay">
+            <div class="text">Hello World</div>
+          </div>
+        </div> */}
+
+         </div>
 
 
 

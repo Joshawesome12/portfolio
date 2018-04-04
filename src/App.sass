@@ -1,5 +1,5 @@
 $theme-black: #222
-
+$theme-red: rgb(217, 13, 13)
 .App
   margin: 0
 
@@ -31,6 +31,7 @@ $theme-black: #222
 
 .App-title
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif
+  // font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif
   margin: 0
   font-size: 60px
 
@@ -117,7 +118,6 @@ $theme-black: #222
    // grid-auto-rows: minmax(100px, auto)
 
 
-
 .javascript-img
   height: 200px
   padding: 10px
@@ -162,8 +162,63 @@ $theme-black: #222
   justify-content: space-around
   align-items: center
   flex-direction: column
-  height: 500px
+  height: 1000px
   background-color: $theme-black
 
-.projects-title
-  font-size: 60px
+  .projects-title
+    font-size: 60px
+
+  .project-imgs
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-direction: row
+
+    .data-world
+      display: flex
+      justify-content: space-around
+      align-items: center
+      flex-direction: column
+      padding: 20px
+      .data-world-title
+        font-size: 50px
+      .data-world-img
+        height: 500px
+
+    .campfire
+      display: flex
+      justify-content: space-around
+      align-items: center
+      flex-direction: column
+      padding: 20px
+      .campfire-title
+        font-size: 50px
+      .campfire-img
+        height: 500px
+
+.container
+  position: relative
+  // width: 50%
+  &:hover .overlay
+    opacity: 1
+
+.overlay
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  height: 500px
+  opacity: 0
+  transition: .5s ease
+  background-color: $theme-red
+
+.text
+  color: white
+  font-size: 20px
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  // -ms-transform: translate(-50%, -50%)
+  text-align: center
