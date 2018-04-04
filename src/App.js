@@ -33,23 +33,33 @@ class App extends Component {
         {/* <p className="App-intro"></p> */}
         <div className="skills">
 
-          <h1 className='something'>Skills</h1>
+          <h1 className='skills-title'>Skills</h1>
 
           <div className='skill_icons'>
-            <img className='javascript-img' src={require('./resources/javascript.jpeg')}/>
+            <img className='html-img' src={require('./resources/icon_html.png')}/>
             <img className='css-img' src={require('./resources/icon_css.png')}/>
+            <img className='javascript-img' src={require('./resources/javascript.jpeg')}/>
             <img className='jquery-img' src={require('./resources/icon_jquery.png')}/>
             <img className='react-img' src={require('./resources/icon_react.png')}/>
             <img className='angular-img' src={require('./resources/icon_angularjs.png')}/>
             <img className='redux-img' src={require('./resources/icon_redux.png')}/>
             <img className='node-img' src={require('./resources/icon_node.png')}/>
             <img className='mysql-img' src={require('./resources/icon_mysql.png')}/>
+            <img className='sass-img' src={require('./resources/icon_sass.png')}/>
           </div>
 
         </div>
 
         <div className='projects'>
 
+          <h1 className='projects-title'>Projects</h1>
+
+          {/* <div class="w3-content w3-display-container">
+            <img class="mySlides" src={require('./resources/icon_mysql.png')}/>
+            <img class="mySlides" src={require('./resources/icon_html.png')}/>
+            <img class="mySlides" src={require('./resources/icon_css.png')}/>
+            <img class="mySlides" src={require('./resources/icon_react.png')}/>
+         </div> */}
 
 
 
