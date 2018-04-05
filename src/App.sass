@@ -10,6 +10,7 @@ $theme-red: rgb(217, 13, 13)
   align-items: center
   background-color: $theme-black
   height: 500px
+  width: auto
   padding: 20px
   margin: 0
   color: white
@@ -41,7 +42,7 @@ $theme-red: rgb(217, 13, 13)
 	justify-content: space-between
 
 .linkedin
-  height: 50px
+  height: 40px
   margin: 0
   padding-top: 22px
   padding-left: 5px
@@ -49,27 +50,30 @@ $theme-red: rgb(217, 13, 13)
     animation: logo-spin 1.1s ease-in-out 0s
 
 .github
+  height: 70px
+  padding-top: 5px
   &:hover
     animation: logo-spin 1.1s ease-in-out 0s
-  height: 90px
 
 .gmail
-  height: 60px
+  height: 48px
   padding-top: 18px
 
   &:hover
     animation: logo-spin 1.1s ease-in-out 0s
 
 .resume
-  height: 70px
-  padding: 10px
+  height: 60px
+  padding-top: 10px
+  padding-left: 5px
+
   &:hover
     animation: logo-spin 1.1s ease-in-out 0s
 
 .me
   // &:hover
     // animation: test 2s ease-in-out 0s
-  height: 400px
+  height: 350px
 
 
 // @keyframes test
@@ -111,63 +115,64 @@ $theme-red: rgb(217, 13, 13)
   background-color: white
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif
   height: auto
+  width: auto
   padding-bottom: 50px
 
   .skills-title
-    font-size: 60px
+    font-size: 50px
 
   .skill_icons
     display: grid
     // height: 300px
     width: 1200px
     grid-template-columns: repeat(5, 1fr)
-    grid-gap: 40px
+    grid-gap: 30px
     align-items: center
     justify-items: center
      // grid-auto-rows: minmax(100px, auto)
 
     h1
-      font-size: 40px
+      font-size: 30px
       text-align: center
 
     .javascript-img
-      height: 150px
+      height: 120px
       padding: 10px
       margin: 0
 
     .css-img
-      height: 170px
+      height: 150px
       // padding: 10px
       margin: 0
 
     .jquery-img
-      height: 150px
+      height: 120px
       padding: 10px
       margin: 0
 
     .react-img
-      height: 150px
+      height: 120px
       padding: 10px
       margin: 0
 
     .angular-img
-      height: 150px
+      height: 120px
       padding: 10px
 
     .redux-img
-      height: 150px
+      height: 120px
 
     .node-img
-      height: 150px
+      height: 120px
 
     .mysql-img
-      height: 150px
+      height: 120px
 
     .html-img
-      height: 150px
+      height: 120px
 
     .sass-img
-      height: 150px
+      height: 120px
 
 .projects
   display: flex
@@ -181,7 +186,7 @@ $theme-red: rgb(217, 13, 13)
   padding-bottom: 50px
 
   .projects-title
-    font-size: 60px
+    font-size: 50px
 
   .project-imgs
     display: flex
@@ -201,7 +206,7 @@ $theme-red: rgb(217, 13, 13)
           animation: logo-spin 1.1s ease-in-out 0s
 
     .projects-titles
-      font-size: 50px
+      font-size: 40px
 
     .data-world
       display: flex
@@ -212,7 +217,7 @@ $theme-red: rgb(217, 13, 13)
       // .data-world-title
       //   font-size: 50px
       .data-world-img
-        height: 500px
+        height: 420px
 
     .campfire
       display: flex
@@ -223,7 +228,7 @@ $theme-red: rgb(217, 13, 13)
       // .campfire-title
       //   font-size: 50px
       .campfire-img
-        height: 500px
+        height: 420px
 
 .container
   position: relative
@@ -237,7 +242,6 @@ $theme-red: rgb(217, 13, 13)
   bottom: 0
   left: 0
   right: 0
-  height: 500px
   opacity: 0
   transition: .5s ease
   background-color: $theme-red
