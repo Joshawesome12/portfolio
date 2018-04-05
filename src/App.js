@@ -16,23 +16,23 @@ class App extends Component {
         <header className="App-header">
           <img className="me" src={require('./resources/me.JPG')}/>
           <div className="titles">
-          <img className="coffee" src={require('./resources/coffee.gif')}/>
-          <h1 className="App-title">Joshua Pawlik</h1>
-          <h3 className="App-subTitle">Full Stack Software Engineer</h3>
+            <img className="coffee" src={require('./resources/coffee.gif')}/>
+            <h1 className="App-title">Joshua Pawlik</h1>
+            <h3 className="App-subTitle">Full Stack Software Engineer</h3>
           </div>
           <div className="icons">
             <a href="https://www.linkedin.com/in/joshua-pawlik">
-          <img className="linkedin" src={require('./resources/social-media/linkedin-512.png')}/>
-          </a>
-          <a href="https://www.github.com/joshawesome12">
-          <img className="github" src={require('./resources/social-media/github.png')}/>
-        </a>
-        <a href="mailto:joshuapawlik12@gmail.com">
-        <img className="gmail" src={require('./resources/social-media/Gmail_Icon.png')}/>
-      </a>
-      <a href="https://drive.google.com/open?id=1OAejV5dfwhs0lb40x2B3QBTADtEyIZFq">
-    <img className="resume" src={require('./resources/resume.png')}/>
-    </a>
+              <img className="linkedin" src={require('./resources/social-media/linkedin-512.png')}/>
+            </a>
+            <a href="https://www.github.com/joshawesome12">
+              <img className="github" src={require('./resources/social-media/github.png')}/>
+            </a>
+            <a href="mailto:joshuapawlik12@gmail.com">
+              <img className="gmail" src={require('./resources/social-media/Gmail_Icon.png')}/>
+            </a>
+            <a href="https://drive.google.com/open?id=1OAejV5dfwhs0lb40x2B3QBTADtEyIZFq">
+              <img className="resume" src={require('./resources/resume.png')}/>
+            </a>
           </div>
         </header>
         {/* <p className="App-intro"></p> */}
@@ -83,17 +83,21 @@ class App extends Component {
             </div>
 
           </div>
-
         </div>
 
         <div className='projects'>
-
           <h1 className='projects-title'>Projects</h1>
-
          <div className='project-imgs'>
 
            <div className='data-world'>
-             <h3 className='data-world-title'>dataset.tools</h3>
+
+             <div className='project-header'>
+               <h3 className='projects-titles'>dataset.tools</h3>
+               <a href="https://github.com/PhiDataKappa/dataset.tools">
+                 <img className="git" src={require('./resources/red-git.png')}/>
+               </a>
+             </div>
+
              <div className='container'>
                <img src={require('./resources/data.world.png')} className='data-world-img'/>
                <div class="overlay">
@@ -103,12 +107,19 @@ class App extends Component {
          </div>
 
          <div className='campfire'>
-           <h3 className='campfire-title'>Campfire</h3>
+
+           <div className="project-header">
+             <h3 className='projects-titles'>Campfire</h3>
+             <a href="https://github.com/Constant-Time/Campfire">
+               <img className="git" src={require('./resources/red-git.png')}/>
+             </a>
+           </div>
+
            <a href='http://www.campfireonline.net' className="campfire-link">
            <div className='container'>
              <img src={require('./resources/campfire.png')} className='campfire-img'/>
              <div class="overlay">
-               <div class="text">A storytelling app that allows users to create playful, community-driven stories</div>
+               <div class="text">A storytelling app that allows users to create playful, community-driven stories.(Click to open in browser)</div>
              </div>
            </div>
          </a>
