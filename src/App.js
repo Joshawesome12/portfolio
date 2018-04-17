@@ -102,8 +102,8 @@ class App extends Component {
 
              <div className='container'>
                <img src={require('./resources/data.world.png')} className='data-world-img'/>
-               <div class="overlay">
-                 <div class="text">A electron desktop app that lets you easily download and upload your datasets from Data.World without ever having to open your browser.</div>
+               <div className="overlay">
+                 <div className="text">A electron desktop app that lets you easily download and upload your datasets from Data.World without ever having to open your browser.</div>
                </div>
              </div>
          </div>
@@ -120,8 +120,8 @@ class App extends Component {
            <a href='http://www.campfireonline.net' className="campfire-link">
            <div className='container'>
              <img src={require('./resources/campfire.png')} className='campfire-img'/>
-             <div class="overlay">
-               <div class="text">A storytelling app that allows users to create playful, community-driven stories.(Click to open in browser)</div>
+             <div className="overlay">
+               <div className="text">A storytelling app that allows users to create playful, community-driven stories.(Click to open in browser)</div>
              </div>
            </div>
          </a>
