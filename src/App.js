@@ -16,24 +16,24 @@ class App extends Component {
       <div className="App">
 
         <header className="App-header">
-          <img className="me" src={require('./resources/me.JPG')}/>
+          <img className="me" src={require('./resources/me.JPG')} alt='myself'/>
           <div className="titles">
-            <img className="coffee" src={require('./resources/coffee.gif')}/>
+            <img className="coffee" src={require('./resources/coffee.gif')} alt='coffee gif'/>
             <h1 className="App-title">Joshua Pawlik</h1>
             <h3 className="App-subTitle">Full Stack Software Engineer</h3>
           </div>
           <div className="icons">
             <a href="https://www.linkedin.com/in/joshua-pawlik">
-              <img className="linkedin" src={require('./resources/social-media/linkedin-512.png')}/>
+              <img className="linkedin" src={require('./resources/social-media/linkedin-512.png')} alt='linkedin'/>
             </a>
             <a href="https://www.github.com/joshawesome12">
-              <img className="github" src={require('./resources/social-media/github.png')}/>
+              <img className="github" src={require('./resources/social-media/github.png')} alt='github'/>
             </a>
             <a href="mailto:joshuapawlik12@gmail.com">
-              <img className="gmail" src={require('./resources/social-media/Gmail_Icon.png')}/>
+              <img className="gmail" src={require('./resources/social-media/Gmail_Icon.png')} alt='email'/>
             </a>
             <a href="https://drive.google.com/open?id=1dDf_utFiuRXmsgmKh6Vpj21k9mFg9aCm">
-              <img className="resume" src={require('./resources/resume.png')}/>
+              <img className="resume" src={require('./resources/resume.png')} alt='resume icon'/>
             </a>
           </div>
         </header>
@@ -45,43 +45,43 @@ class App extends Component {
           <div className='skill_icons'>
             <div>
               <h1>Javascript</h1>
-              <img className='javascript-img' src={require('./resources/icons/javascript.jpeg')}/>
+              <img className='javascript-img' src={require('./resources/icons/javascript.jpeg')} alt='javscript icon'/>
             </div>
             <div>
               <h1>HTML</h1>
-              <img className='html-img' src={require('./resources/icons/icon_html.png')}/>
+              <img className='html-img' src={require('./resources/icons/icon_html.png')}alt=''/>
             </div>
             <div>
               <h1>CSS</h1>
-              <img className='css-img' src={require('./resources/icons/icon_css.png')}/>
+              <img className='css-img' src={require('./resources/icons/icon_css.png')}alt=''/>
             </div>
             <div>
               <h1>SCSS</h1>
-              <img className='sass-img' src={require('./resources/icons/icon_sass.png')}/>
+              <img className='sass-img' src={require('./resources/icons/icon_sass.png')}alt=''/>
             </div>
             <div>
               <h1>jQuery</h1>
-              <img className='jquery-img' src={require('./resources/icons/icon_jquery.png')}/>
+              <img className='jquery-img' src={require('./resources/icons/icon_jquery.png')}alt=''/>
             </div>
             <div>
               <h1>ReactJS</h1>
-              <img className='react-img' src={require('./resources/icons/icon_react.png')}/>
+              <img className='react-img' src={require('./resources/icons/icon_react.png')}alt=''/>
             </div>
             <div>
               <h1>Redux</h1>
-              <img className='redux-img' src={require('./resources/icons/icon_redux.png')}/>
+              <img className='redux-img' src={require('./resources/icons/icon_redux.png')}alt=''/>
             </div>
             <div>
               <h1>AngularJS</h1>
-              <img className='angular-img' src={require('./resources/icons/icon_angularjs.png')}/>
+              <img className='angular-img' src={require('./resources/icons/icon_angularjs.png')}alt=''/>
             </div>
             <div>
               <h1>Node.js</h1>
-              <img className='node-img' src={require('./resources/icons/icon_node.png')}/>
+              <img className='node-img' src={require('./resources/icons/icon_node.png')}alt=''/>
             </div>
             <div>
               <h1>MySQL</h1>
-              <img className='mysql-img' src={require('./resources/icons/icon_mysql.png')}/>
+              <img className='mysql-img' src={require('./resources/icons/icon_mysql.png')}alt=''/>
             </div>
 
           </div>
@@ -96,12 +96,12 @@ class App extends Component {
              <div className='project-header'>
                <h3 className='projects-titles'>dataset.tools</h3>
                <a href="https://github.com/PhiDataKappa/dataset.tools">
-                 <img className="git" src={require('./resources/red-git.png')}/>
+                 <img className="git" src={require('./resources/red-git.png')} alt='git'/>
                </a>
              </div>
 
              <div className='container'>
-               <img src={require('./resources/data.world.png')} className='data-world-img'/>
+               <img src={require('./resources/data.world.png')} className='data-world-img'alt=''/>
                <div className="overlay">
                  <div className="text">A electron desktop app that lets you easily download and upload your datasets from Data.World without ever having to open your browser.</div>
                </div>
@@ -113,13 +113,13 @@ class App extends Component {
            <div className="project-header">
              <h3 className='projects-titles'>Campfire</h3>
              <a href="https://github.com/Constant-Time/Campfire">
-               <img className="git" src={require('./resources/red-git.png')}/>
+               <img className="git" src={require('./resources/red-git.png')}alt=''/>
              </a>
            </div>
 
            <a href='http://www.campfireonline.net' className="campfire-link">
            <div className='container'>
-             <img src={require('./resources/campfire.png')} className='campfire-img'/>
+             <img src={require('./resources/campfire.png')} className='campfire-img'alt=''/>
              <div className="overlay">
                <div className="text">A storytelling app that allows users to create playful, community-driven stories.(Click to open in browser)</div>
              </div>
