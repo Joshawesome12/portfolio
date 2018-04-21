@@ -9,101 +9,67 @@ $theme-red: rgb(217, 13, 13)
   justify-content: space-around
   align-items: center
   background-color: $theme-black
-  height: 500px
+  // height: 500px
+  height: auto
   width: auto
-  padding: 20px
+  padding: 80px
   margin: 0
   color: white
 
-.titles
-  display: flex
-  flex-direction: column
-  align-items: center
+  .me
+    // &:hover
+      // animation: test 2s ease-in-out 0s
+    height: 350px
 
-.App-logo
-  animation: logo-spin infinite 1s linear
-  height: 80px
-
-@keyframes logo-spin
-  from
-    transform: rotate(0deg)
-  to
-    transform: rotate(360deg)
-
-.App-title
-  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif
-  // font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif
-  margin: 0
-  font-size: 60px
-
-.icons
-	display: flex
-	flex-direction: row
-	justify-content: space-between
-
-.linkedin
-  height: 40px
-  margin: 0
-  padding-top: 22px
-  padding-left: 5px
-  // &:hover
-  //   animation: logo-spin 1.1s ease-in-out 0s
-
-.github
-  height: 70px
-  padding-top: 5px
-  // &:hover
-  //   animation: logo-spin 1.1s ease-in-out 0s
-
-.gmail
-  height: 48px
-  padding-top: 18px
-
-  // &:hover
-  //   animation: logo-spin 1.1s ease-in-out 0s
-
-.resume
-  height: 60px
-  padding-top: 10px
-  padding-left: 5px
-
-  // &:hover
-  //   animation: logo-spin 1.1s ease-in-out 0s
-
-.me
-  // &:hover
-    // animation: test 2s ease-in-out 0s
-  height: 350px
+  .titles
+    display: flex
+    flex-direction: column
+    align-items: center
 
 
-// @keyframes test
-//   0%
-//     height: 400px
-//   100%
-//     height: 500px
+    .App-title
+      font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif
+      // font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif
+      margin: 0
+      font-size: 60px
+
+  .icons
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+    .linkedin
+      height: 40px
+      margin: 0
+      padding-top: 22px
+      padding-left: 5px
+      // &:hover
+      //   animation: logo-spin 1.1s ease-in-out 0s
+
+    .github
+      height: 70px
+      padding-top: 5px
+      // &:hover
+      //   animation: logo-spin 1.1s ease-in-out 0s
+
+    .gmail
+      height: 48px
+      padding-top: 18px
+
+      // &:hover
+      //   animation: logo-spin 1.1s ease-in-out 0s
+
+    .resume
+      height: 60px
+      padding-top: 10px
+      padding-left: 5px
+
+      // &:hover
+      //   animation: logo-spin 1.1s ease-in-out 0s
 
 
-.box
-  display: inline-block
-  background: white
-  width: 200px
-  height: 200px
-  position: relative
-  animation: myframes 2s ease-in-out 0s infinite
-  animation-direction: alternate
-
-  &.is-paused
-      animation-play-state: paused
-
-@keyframes myframes
-    from
-      height: 200px
-    to
-      height: 600px
-      background: red
-
-.coffee
-  height: 140px
+  .coffee
+    height: 140px
 
 .skills
   display: flex
@@ -255,3 +221,45 @@ $theme-red: rgb(217, 13, 13)
   transform: translate(-50%, -50%)
   // -ms-transform: translate(-50%, -50%)
   text-align: center
+//Came with create-react-app
+//Kept it for the logo-spin animation
+.App-logo
+  animation: logo-spin infinite 1s linear
+  height: 80px
+
+@keyframes logo-spin
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
+
+
+
+
+
+// @keyframes test
+//   0%
+//     height: 400px
+//   100%
+//     height: 500px
+
+
+//Trying out an animation
+// .box
+//   display: inline-block
+//   background: white
+//   width: 200px
+//   height: 200px
+//   position: relative
+//   animation: myframes 2s ease-in-out 0s infinite
+//   animation-direction: alternate
+//
+//   &.is-paused
+//       animation-play-state: paused
+//
+// @keyframes myframes
+//     from
+//       height: 200px
+//     to
+//       height: 600px
+//       background: red
