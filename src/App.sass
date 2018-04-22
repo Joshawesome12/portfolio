@@ -5,13 +5,13 @@ $theme-red: rgb(217, 13, 13)
 
 .App-header
   display: flex
-  flex-direction: row
+  // flex-direction: row
   justify-content: space-around
   align-items: center
   background-color: $theme-black
   // height: 500px
   height: auto
-  width: auto
+  width: 90%
   padding: 80px
   margin: 0
   color: white
@@ -19,6 +19,7 @@ $theme-red: rgb(217, 13, 13)
   .me
     // &:hover
       // animation: test 2s ease-in-out 0s
+    max-width: 100%
     height: 350px
 
   .titles
@@ -29,9 +30,15 @@ $theme-red: rgb(217, 13, 13)
 
     .App-title
       font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif
+      text-align: center
       // font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif
       margin: 0
-      font-size: 60px
+      font-size: 4em
+      // font-size: 60px
+
+    .App-subTitle
+      text-align: center
+      font-size: 1.5em
 
   .icons
     display: flex
@@ -92,7 +99,7 @@ $theme-red: rgb(217, 13, 13)
     // height: 300px
     width: 100%
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
-    grid-gap: 30px
+    grid-gap: 25px
     align-items: center
     justify-items: center
      // grid-auto-rows: minmax(100px, auto)
@@ -147,7 +154,7 @@ $theme-red: rgb(217, 13, 13)
   align-items: center
   flex-direction: column
   height: auto
-  width: auto
+  width: 100%
   background-color: $theme-black
   padding-bottom: 50px
 
@@ -157,8 +164,9 @@ $theme-red: rgb(217, 13, 13)
   .project-imgs
     display: flex
     justify-content: space-around
-    align-items: center
+    // align-items: center
     // flex-direction: row
+    width: 90%
 
     .project-header
       display: flex
@@ -183,7 +191,8 @@ $theme-red: rgb(217, 13, 13)
       // .data-world-title
       //   font-size: 50px
       .data-world-img
-        height: 420px
+        height: auto
+        max-width: 100%
 
     .campfire
       display: flex
@@ -194,7 +203,8 @@ $theme-red: rgb(217, 13, 13)
       // .campfire-title
       //   font-size: 50px
       .campfire-img
-        height: 420px
+        height: auto
+        max-width: 100%
 
 .container
   position: relative
