@@ -8,7 +8,7 @@ class App extends Component {
   //
   // }
 
-  //TODO :add state
+  //TODO : Add About me
 
 
   render() {
