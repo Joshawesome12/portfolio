@@ -15,6 +15,15 @@ class App extends Component {
     return (
       <div className="App">
 
+        <div className="navbar">
+          <h1>Joshua Pawlik</h1>
+          <div className='links'>
+          	<a href="#skills">Skills</a>
+          	<a href="#projects">Projects</a>
+          	{/* <a href="#contact">About Me</a> */}
+          </div>
+        </div>
+
         <header className="App-header">
           <img className="me" src={require('./resources/me.JPG')} alt='myself'/>
           <div className="titles">
@@ -38,7 +47,7 @@ class App extends Component {
           </div>
         </header>
         {/* <p className="App-intro"></p> */}
-        <div className="skills">
+        <div className="skills" id="skills">
 
           <h1 className='skills-title'>Skills</h1>
 
@@ -87,7 +96,7 @@ class App extends Component {
           </div>
         </div>
 
-        <div className='projects'>
+        <div className='projects' id="projects">
           <h1 className='projects-title'>Projects</h1>
          <div className='project-imgs'>
 
@@ -144,12 +153,28 @@ class App extends Component {
          </div>
 
          </div>
+       </div> {/*end projects*/}
 
 
+       {/* <div className='about'>
 
+        <div className='about-title'>
+         <h1 className='about-heading'>About Me</h1>
+         <div className='line-black'></div>
         </div>
 
-      </div>
+        <div className='about-me'>
+           <p className='about-p'>
+             Creating with a keyboard is what drives me. My main areas of focus are Javascript, Node.js, MySQL. I am experienced with modern frontend frameworks such as React and AngularJS.<br/>
+             I enjoy working with teams and I am always looking to explore new technologies. I enjoy scrum type management and utilizing git workflows to meet deadlines with as many merged commits as necessary while introducing as little bugs as possible.<br/>
+             I consider myself talented at turning caffeine into code.
+           </p>
+         </div>
+
+
+       </div> */}
+
+      </div> //end app
     );
   }
 }
