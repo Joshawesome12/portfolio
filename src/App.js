@@ -20,7 +20,7 @@ class App extends Component {
           <div className='links'>
           	<a href="#skills">Skills</a>
           	<a href="#projects">Projects</a>
-          	{/* <a href="#contact">About Me</a> */}
+          	{/* <a href="#about">About Me</a> */}
           </div>
         </div>
 
