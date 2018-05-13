@@ -18,9 +18,9 @@ class App extends Component {
         <div className="navbar">
           <h1>Joshua Pawlik</h1>
           <div className='links'>
-          	<a href="#skills">Skills</a>
+            <a href="#about">About Me</a>
           	<a href="#projects">Projects</a>
-          	{/* <a href="#about">About Me</a> */}
+            <a href="#skills">Skills</a>
           </div>
         </div>
 
@@ -47,53 +47,23 @@ class App extends Component {
           </div>
         </header>
         {/* <p className="App-intro"></p> */}
-        <div className="skills" id="skills">
 
-          <h1 className='skills-title'>Skills</h1>
+        <div className='about' id="about">
 
-          <div className='skill_icons'>
-            <div>
-              <h1>Javascript</h1>
-              <img className='javascript-img' src={require('./resources/icons/javascript.jpeg')} alt='javscript icon'/>
-            </div>
-            <div>
-              <h1>HTML</h1>
-              <img className='html-img' src={require('./resources/icons/icon_html.png')}alt=''/>
-            </div>
-            <div>
-              <h1>CSS</h1>
-              <img className='css-img' src={require('./resources/icons/icon_css.png')}alt=''/>
-            </div>
-            <div>
-              <h1>SCSS</h1>
-              <img className='sass-img' src={require('./resources/icons/icon_sass.png')}alt=''/>
-            </div>
-            <div>
-              <h1>jQuery</h1>
-              <img className='jquery-img' src={require('./resources/icons/icon_jquery.png')}alt=''/>
-            </div>
-            <div>
-              <h1>ReactJS</h1>
-              <img className='react-img' src={require('./resources/icons/icon_react.png')}alt=''/>
-            </div>
-            <div>
-              <h1>Redux</h1>
-              <img className='redux-img' src={require('./resources/icons/icon_redux.png')}alt=''/>
-            </div>
-            <div>
-              <h1>AngularJS</h1>
-              <img className='angular-img' src={require('./resources/icons/icon_angularjs.png')}alt=''/>
-            </div>
-            <div>
-              <h1>Node.js</h1>
-              <img className='node-img' src={require('./resources/icons/icon_node.png')}alt=''/>
-            </div>
-            <div>
-              <h1>MySQL</h1>
-              <img className='mysql-img' src={require('./resources/icons/icon_mysql.png')}alt=''/>
-            </div>
+         <div className='about-title'>
+          <h1 className='about-heading'>About Me</h1>
+          <div className='line-black'></div>
+         </div>
 
+         <div className='about-me'>
+            <p className='about-p'>
+              Creating with a keyboard is what drives me. My main areas of focus are Javascript, Node.js, MySQL. I am experienced with modern frontend frameworks such as React and AngularJS.<br/>
+              I enjoy working with teams and I am always looking to explore new technologies. I enjoy scrum type management and utilizing git workflows to meet deadlines with as many merged commits as necessary while introducing as little bugs as possible.<br/>
+              I consider myself talented at turning caffeine into code.
+            </p>
           </div>
+
+
         </div>
 
         <div className='projects' id="projects">
@@ -155,24 +125,54 @@ class App extends Component {
          </div>
        </div> {/*end projects*/}
 
+       <div className="skills" id="skills">
 
-       {/* <div className='about'>
+         <h1 className='skills-title'>Skills</h1>
 
-        <div className='about-title'>
-         <h1 className='about-heading'>About Me</h1>
-         <div className='line-black'></div>
-        </div>
+         <div className='skill_icons'>
+           <div>
+             <h1>Javascript</h1>
+             <img className='javascript-img' src={require('./resources/icons/javascript.jpeg')} alt='javscript icon'/>
+           </div>
+           <div>
+             <h1>HTML</h1>
+             <img className='html-img' src={require('./resources/icons/icon_html.png')}alt=''/>
+           </div>
+           <div>
+             <h1>CSS</h1>
+             <img className='css-img' src={require('./resources/icons/icon_css.png')}alt=''/>
+           </div>
+           <div>
+             <h1>SCSS</h1>
+             <img className='sass-img' src={require('./resources/icons/icon_sass.png')}alt=''/>
+           </div>
+           <div>
+             <h1>jQuery</h1>
+             <img className='jquery-img' src={require('./resources/icons/icon_jquery.png')}alt=''/>
+           </div>
+           <div>
+             <h1>ReactJS</h1>
+             <img className='react-img' src={require('./resources/icons/icon_react.png')}alt=''/>
+           </div>
+           <div>
+             <h1>Redux</h1>
+             <img className='redux-img' src={require('./resources/icons/icon_redux.png')}alt=''/>
+           </div>
+           <div>
+             <h1>AngularJS</h1>
+             <img className='angular-img' src={require('./resources/icons/icon_angularjs.png')}alt=''/>
+           </div>
+           <div>
+             <h1>Node.js</h1>
+             <img className='node-img' src={require('./resources/icons/icon_node.png')}alt=''/>
+           </div>
+           <div>
+             <h1>MySQL</h1>
+             <img className='mysql-img' src={require('./resources/icons/icon_mysql.png')}alt=''/>
+           </div>
 
-        <div className='about-me'>
-           <p className='about-p'>
-             Creating with a keyboard is what drives me. My main areas of focus are Javascript, Node.js, MySQL. I am experienced with modern frontend frameworks such as React and AngularJS.<br/>
-             I enjoy working with teams and I am always looking to explore new technologies. I enjoy scrum type management and utilizing git workflows to meet deadlines with as many merged commits as necessary while introducing as little bugs as possible.<br/>
-             I consider myself talented at turning caffeine into code.
-           </p>
          </div>
-
-
-       </div> */}
+       </div>
 
       </div> //end app
     );
