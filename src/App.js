@@ -18,7 +18,7 @@ class App extends Component {
         <div className="navbar">
           <h1>Joshua Pawlik</h1>
           <div className='links'>
-            <a href="#about">About Me</a>
+            {/* <a href="#about">About Me</a> */}
           	<a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
           </div>
