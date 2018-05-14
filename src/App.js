@@ -58,7 +58,7 @@ class App extends Component {
          <div className='about-me'>
             <p className='about-p'>
               Creating with a keyboard is what drives me. My main areas of focus are Javascript, Node.js, MySQL. I am experienced with modern frontend frameworks such as React and AngularJS.<br/>
-              I enjoy working with teams and I am always looking to explore new technologies. I enjoy scrum type management and utilizing git workflows to meet deadlines with as many merged commits as necessary while introducing as little bugs as possible.<br/>
+              I enjoy working with teams and I am always looking to explore new technologies. I enjoy scrum type management, and utilizing git workflows to meet deadlines with as many merged commits as necessary while introducing as little bugs as possible.<br/>
               I consider myself talented at turning caffeine into code.
             </p>
           </div>
