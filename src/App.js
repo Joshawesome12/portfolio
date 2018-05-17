@@ -8,9 +8,6 @@ class App extends Component {
   //
   // }
 
-  //TODO : Add About me
-
-
   render() {
     return (
       <div className="App">
