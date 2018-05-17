@@ -12,14 +12,14 @@ class App extends Component {
     return (
       <div className="App">
 
-        <div className="navbar">
+        {/* <div className="navbar">
           <h1>Joshua Pawlik</h1>
           <div className='links'>
-            {/* <a href="#about">About Me</a> */}
+            <a href="#about">About Me</a>
           	<a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
           </div>
-        </div>
+        </div> */}
 
         <header className="App-header">
           <img className="me" src={require('./resources/me.JPG')} alt='myself'/>
