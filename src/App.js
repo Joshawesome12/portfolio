@@ -171,7 +171,9 @@ class App extends Component {
          </div>
        </div>
        <div className='footer'>
-         
+
+         <h1 className='footer-text'>Joshua Pawlik © 2018</h1>
+
        </div>
 
       </div> //end app
