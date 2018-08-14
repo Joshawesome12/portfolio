@@ -29,16 +29,16 @@ class App extends Component {
             <h3 className="App-subTitle">Full Stack Software Engineer</h3>
           </div>
           <div className="icons">
-            <a href="https://www.linkedin.com/in/joshua-pawlik">
+            <a href="https://www.linkedin.com/in/joshua-pawlik" target="_blank">
               <img className="linkedin" src={require('./resources/social-media/linkedin-512.png')} alt='linkedin'/>
             </a>
-            <a href="https://www.github.com/joshawesome12">
+            <a href="https://www.github.com/joshawesome12" target="_blank">
               <img className="github" src={require('./resources/social-media/github.png')} alt='github'/>
             </a>
             <a href="mailto:joshuapawlik12@gmail.com">
               <img className="gmail" src={require('./resources/social-media/Gmail_Icon.png')} alt='email'/>
             </a>
-            <a href="https://drive.google.com/file/d/1PL0wSJeiCMkLMktuOWTWNOig3gIUYEsR/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/1PL0wSJeiCMkLMktuOWTWNOig3gIUYEsR/view?usp=sharing" target="_blank">
               <img className="resume" src={require('./resources/resume.png')} alt='resume icon'/>
             </a>
           </div>
