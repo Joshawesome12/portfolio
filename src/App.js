@@ -38,7 +38,7 @@ class App extends Component {
             <a href="mailto:joshuapawlik12@gmail.com">
               <img className="gmail" src={require('./resources/social-media/Gmail_Icon.png')} alt='email'/>
             </a>
-            <a href="https://drive.google.com/file/d/1PL0wSJeiCMkLMktuOWTWNOig3gIUYEsR/view?usp=sharing" target="_blank">
+            <a href="https://drive.google.com/open?id=1Wr47nxb2De-SMuInHxalTkXhlQs9cUtD" target="_blank">
               <img className="resume" src={require('./resources/resume.png')} alt='resume icon'/>
             </a>
           </div>
