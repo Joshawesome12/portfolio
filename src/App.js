@@ -2,11 +2,19 @@ import React, { Component } from 'react';
 import './App.sass';
 
 class App extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {}
-  //
-  // }
+  constructor(props) {
+    super(props);
+    this.state = {
+      imageStatus: "Loading"
+    }
+  }
+
+
+
+  handleImageLoaded(){
+    this.setState({imageStatus: "Loaded"})
+    console.log('hi')
+  }
 
   render() {
     return (
@@ -22,23 +30,26 @@ class App extends Component {
         </div> */}
 
         <header className="App-header">
-          <img className="me" src={require('./resources/me.JPG')} alt='myself'/>
+          <img className="me" src={require('./resources/me.JPG')} onLoad={this.handleImageLoaded.bind(this)} alt='myself'/>
+          <div>
+            {this.state.imageStatus === "Loaded" ? null : <div class="loader"></div>}
+          </div>
           <div className="titles">
             <img className="coffee" src={require('./resources/coffee.gif')} alt='coffee gif'/>
             <h1 className="App-title">Joshua Pawlik</h1>
             <h3 className="App-subTitle">Full Stack Software Engineer</h3>
           </div>
           <div className="icons">
-            <a href="https://www.linkedin.com/in/joshua-pawlik" target="_blank">
+            <a href="https://www.linkedin.com/in/joshua-pawlik" target="_blank" rel="noopener noreferrer">
               <img className="linkedin" src={require('./resources/social-media/linkedin-512.png')} alt='linkedin'/>
             </a>
-            <a href="https://www.github.com/joshawesome12" target="_blank">
+            <a href="https://www.github.com/joshawesome12" target="_blank" rel="noopener noreferrer">
               <img className="github" src={require('./resources/social-media/github.png')} alt='github'/>
             </a>
             <a href="mailto:joshuapawlik12@gmail.com">
               <img className="gmail" src={require('./resources/social-media/Gmail_Icon.png')} alt='email'/>
             </a>
-            <a href="https://drive.google.com/open?id=1Wr47nxb2De-SMuInHxalTkXhlQs9cUtD" target="_blank">
+            <a href="https://drive.google.com/open?id=1Wr47nxb2De-SMuInHxalTkXhlQs9cUtD" target="_blank" rel="noopener noreferrer">
               <img className="resume" src={require('./resources/resume.png')} alt='resume icon'/>
             </a>
           </div>
