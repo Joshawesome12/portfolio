@@ -5,15 +5,14 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      imageStatus: "Loading"
+      imageStatus: <div className="loader"></div>
     }
   }
 
 
 
-  handleImageLoaded(){
-    this.setState({imageStatus: "Loaded"})
-    console.log('hi')
+  handleImageLoaded = () => {
+    this.setState({imageStatus: null})
   }
 
   render() {
@@ -32,7 +31,7 @@ class App extends Component {
         <header className="App-header">
           <img className="me" src={require('./resources/me.JPG')} onLoad={this.handleImageLoaded.bind(this)} alt='myself'/>
           <div>
-            {this.state.imageStatus === "Loaded" ? null : <div class="loader"></div>}
+            {/* {this.state.imageStatus} */}
           </div>
           <div className="titles">
             <img className="coffee" src={require('./resources/coffee.gif')} alt='coffee gif'/>
