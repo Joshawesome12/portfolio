@@ -5,7 +5,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      imageStatus: <div className="loader"></div>
+      // imageStatus: <div className="loader"></div>
     }
   }
 
@@ -29,7 +29,7 @@ class App extends Component {
         </div> */}
 
         <header className="App-header">
-          <img className="me" src={require('./resources/me.JPG')} onLoad={this.handleImageLoaded.bind(this)} alt='myself'/>
+          <img className="me" src={require('./resources/me.JPG')} alt='myself'/>
           <div>
             {/* {this.state.imageStatus} */}
           </div>
