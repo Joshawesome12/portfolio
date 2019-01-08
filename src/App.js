@@ -5,14 +5,16 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      imageStatus: <div className="loader"></div>
+      imageStatus: <div className="loader"></div>,
+      visibility: "hidden"
     }
   }
 
 
 
   handleImageLoaded = () => {
-    this.setState({imageStatus: null})
+    console.log(this.state.visibility)
+    this.setState({imageStatus: null, visibility:"me"})
   }
 
   render() {
@@ -29,10 +31,12 @@ class App extends Component {
         </div> */}
 
         <header className="App-header">
-          <img className="me" onLoad={this.handleImageLoaded} src={require('./resources/me.JPG')} alt='myself'/>
-          <div>
+          <img className={this.state.visibility} onLoad={this.handleImageLoaded.bind(this)} src={require('./resources/me.JPG')} alt='myself'/>
+
+          <div className="spinner">
             {this.state.imageStatus}
           </div>
+
           <div className="titles">
             <img className="coffee" src={require('./resources/coffee.gif')} alt='coffee gif'/>
             <h1 className="App-title">Joshua Pawlik</h1>
