@@ -6,29 +6,19 @@ class App extends Component {
     super(props);
     this.state = {
       imageStatus: <div className="loader"></div>,
-      visibility: "hidden"
+      visibility: "hidden me"
     }
   }
 
-
-
   handleImageLoaded = () => {
-    console.log(this.state.visibility)
-    this.setState({imageStatus: null, visibility:"me"})
+    this.setState({imageStatus: null}, () => {
+      this.setState({visibility:"me"});
+    })
   }
 
   render() {
     return (
       <div className="App">
-
-        {/* <div className="navbar">
-          <h1>Joshua Pawlik</h1>
-          <div className='links'>
-            <a href="#about">About Me</a>
-          	<a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-          </div>
-        </div> */}
 
         <header className="App-header">
           <img className={this.state.visibility} onLoad={this.handleImageLoaded.bind(this)} src={require('./resources/me.JPG')} alt='myself'/>
@@ -189,6 +179,16 @@ class App extends Component {
          <h1 className='footer-text'>Joshua Pawlik © 2018</h1>
 
        </div>
+
+       {/* Saved */}
+       {/* <div className="navbar">
+         <h1>Joshua Pawlik</h1>
+         <div className='links'>
+           <a href="#about">About Me</a>
+           <a href="#projects">Projects</a>
+           <a href="#skills">Skills</a>
+         </div>
+       </div> */}
 
       </div> //end app
     );
