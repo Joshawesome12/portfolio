@@ -6,7 +6,10 @@ class App extends Component {
     super(props);
     this.state = {
       imageStatus: <div className="loader"></div>,
-      visibility: "hidden me"
+      visibility: "hidden me",
+      locations:["Junk Junction", "The Block", "Haunted Hills", "Pleasant Park", "Lazy Links", "Tomato Temple", "Wailing Woods", "Loot Lake", "Snobby Shores", "Tilted Towers", "Dusty Divot",
+       "Lonely Lodge", "Retail Row", "Shifty Shafts", "Salty Springs", "Frosty Flights", "Fatal Fields", "Paradise Palms", "Happy Hamlet", "Lucky Landing"],
+       show:false
     }
   }
 
@@ -14,6 +17,17 @@ class App extends Component {
     this.setState({imageStatus: null}, () => {
       this.setState({visibility:"me"});
     })
+  }
+
+  selectRandom = () => {
+    var num = Math.floor(Math.random() * 20);
+    // console.log(num)
+    var location = this.state.locations[num]
+    this.setState({drop: location})
+  }
+
+  showDropper = () => {
+    this.setState({show: true})
   }
 
   render() {
@@ -28,7 +42,7 @@ class App extends Component {
           </div>
 
           <div className="titles">
-            <img className="coffee" src={require('./resources/coffee.gif')} alt='coffee gif'/>
+            <img className="coffee" onClick={this.showDropper.bind(this)} src={require('./resources/coffee.gif')} alt='coffee gif'/>
             <h1 className="App-title">Joshua Pawlik</h1>
             <h3 className="App-subTitle">Full Stack Software Engineer</h3>
           </div>
@@ -177,6 +191,16 @@ class App extends Component {
        <div className='footer'>
 
          <h1 className='footer-text'>Joshua Pawlik © 2018</h1>
+
+         {this.state.show ?
+           <div className="stuff">
+           <h2>Random Fortnite Location!! </h2>
+           <div className = "stuff2">
+            <h2>{this.state.drop}</h2>
+            <button className="joke" onClick={this.selectRandom}>Roll!</button>
+           </div>
+           </div>
+           : null }
 
        </div>
 
