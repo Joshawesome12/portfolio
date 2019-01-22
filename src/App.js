@@ -121,20 +121,20 @@ class App extends Component {
          </a>
          </div>
 
-         <div className='Github-fetcher'>
+         <div className='Covetter'>
 
            <div className="project-header">
-             <h3 className='projects-titles' id='github-fetcher-title'>Github-Fetcher</h3>
-             <a href="https://github.com/Joshawesome12/Github-Fetcher">
+             <h3 className='projects-titles' id='github-fetcher-title'>Covetter</h3>
+             <a href="https://github.com/Joshawesome12/Covetter">
                <img className="git" src={require('./resources/red-git.png')}alt=''/>
              </a>
            </div>
-           <div className='container'>
-             <img src={require('./resources/Github-fetcher.png')} className='Github-fetcher-img'alt=''/>
-             <div className="overlay">
-               <div className="text">An application that retrieves a Github users repositories and displays them on a ReactJS frontend.</div>
+            <div className='container'>
+               <img src={require('./resources/covetter.png')} className='covetter-img'alt=''/>
+               <div className="overlay">
+                 <div className="text">An Electron desktop application that accelerates writing similar cover letters</div>
+               </div>
              </div>
-           </div>
          </div>
 
          </div>
