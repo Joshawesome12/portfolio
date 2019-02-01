@@ -192,7 +192,7 @@ class App extends Component {
 
          <h1 className='footer-text'>Joshua Pawlik © 2018</h1>
 
-         /*{this.state.show ?
+         {/*{this.state.show ?
            <div className="stuff">
            <h2>Random Fortnite Location!! </h2>
            <div className = "stuff2">
@@ -200,7 +200,7 @@ class App extends Component {
             <button className="joke" onClick={this.selectRandom}>Roll!</button>
            </div>
            </div>
-           : null } */
+           : null } */}
 
        </div>
 
