@@ -5,7 +5,11 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      imageStatus: <div className="loader"></div>,
+      imageStatus:
+      <div className="spinner">
+        <div className="flicker-text">Lol sorry loading a decent size image here...
+        </div>
+      </div>,
       visibility: "hidden me",
       locations:["Junk Junction", "The Block", "Haunted Hills", "Pleasant Park", "Lazy Links", "Tomato Temple", "Wailing Woods", "Loot Lake", "Snobby Shores", "Tilted Towers", "Dusty Divot",
        "Lonely Lodge", "Retail Row", "Shifty Shafts", "Salty Springs", "Frosty Flights", "Fatal Fields", "Paradise Palms", "Happy Hamlet", "Lucky Landing"],
@@ -15,7 +19,7 @@ class App extends Component {
 
   handleImageLoaded = () => {
     this.setState({imageStatus: null}, () => {
-      this.setState({visibility:"me"});
+      this.setState({visibility:"me fade-in"});
     })
   }
 
@@ -37,9 +41,7 @@ class App extends Component {
         <header className="App-header">
           <img className={this.state.visibility} onLoad={this.handleImageLoaded.bind(this)} src={require('./resources/me.JPG')} alt='myself'/>
 
-          <div className="spinner">
             {this.state.imageStatus}
-          </div>
 
           <div className="titles">
             <img className="coffee" onClick={this.showDropper.bind(this)} src={require('./resources/coffee.gif')} alt='coffee gif'/>
