@@ -7,7 +7,7 @@ class App extends Component {
     this.state = {
       imageStatus:
       <div className="spinner">
-        <div className="flicker-text">Lol sorry loading a decent size image here...
+        <div className="flicker-text">Lol sorry, loading a decent-sized image here...
         </div>
       </div>,
       visibility: "hidden me",
