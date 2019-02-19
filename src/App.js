@@ -39,7 +39,7 @@ class App extends Component {
       <div className="App">
 
         <header className="App-header">
-          <img className={this.state.visibility} onLoad={this.handleImageLoaded.bind(this)} src={require('./resources/me.JPG')} alt='myself'/>
+          <img className={this.state.visibility} onProgress={() => {console.log('progress')}} onLoad={this.handleImageLoaded.bind(this)} src={require('./resources/me.JPG')} alt='myself'/>
 
             {this.state.imageStatus}
 
