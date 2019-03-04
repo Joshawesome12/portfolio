@@ -9,6 +9,11 @@ $theme-white: #D5CCD6
 $theme-blue: #113A6F
 
 
+body
+  background-image: url('./resources/ab-tech.png')
+  background-size: cover
+  // background-position: fixed
+  background-attachment: fixed
 
 .navbar
   width: auto
@@ -132,7 +137,7 @@ $theme-blue: #113A6F
   flex-direction: column
   margin: 0
   // background-color: $theme-red
-  background-color: white
+  // background-color: white
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif
   height: auto
   width: auto
@@ -175,18 +180,34 @@ $theme-blue: #113A6F
       padding: 10px
       margin: 0
 
-    .angular-img
+    .ang-wrapper
       height: 120px
-      padding: 10px
+      // padding: 10px
+      overflow: hidden
+      .angular-img
+        padding-left: 15px
+        height: 130px
+        // width: 200px
+
 
     .redux-img
       height: 120px
 
-    .node-img
+    .node-wrapper
+      overflow: hidden
       height: 120px
+      .node-img
+        padding-top: 20px
+        height: 70px
 
-    .mysql-img
+    .mysql-wrapper
+      overflow: hidden
       height: 120px
+      .mysql-img
+        // padding-top: 10px
+        height: 100px
+        width: 175px
+
 
     .html-img
       height: 120px
@@ -324,7 +345,7 @@ $theme-blue: #113A6F
     .flicker-text
       margin-left: auto
       margin-right: auto
-      
+
   #github-fetcher-title
     font-size: 1.5em
 
@@ -335,7 +356,7 @@ $theme-blue: #113A6F
   justify-content: center
   flex-direction: column
   align-items: center
-  background-color: white
+  // background-color: white
   margin: 0
   padding: 10px
 

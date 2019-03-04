@@ -39,7 +39,7 @@ class App extends Component {
       <div className="App">
 
         <header className="App-header">
-          <img className={this.state.visibility} onProgress={() => {console.log('progress')}} onLoad={this.handleImageLoaded.bind(this)} src={require('./resources/me.JPG')} alt='myself'/>
+          <img className={this.state.visibility} onLoad={this.handleImageLoaded.bind(this)} src={require('./resources/me.JPG')} alt='myself'/>
 
             {this.state.imageStatus}
 
@@ -177,15 +177,21 @@ class App extends Component {
            </div>
            <div>
              <h1>AngularJS</h1>
-             <img className='angular-img' src={require('./resources/icons/icon_angularjs.png')}alt=''/>
+             <div className="ang-wrapper">
+               <img className='angular-img' src={require('./resources/icons/angularjs.png')}alt=''/>
+             </div>
            </div>
            <div>
              <h1>Node.js</h1>
-             <img className='node-img' src={require('./resources/icons/icon_node.png')}alt=''/>
+             <div className="node-wrapper">
+               <img className='node-img' src={require('./resources/icons/icon_node.png')}alt=''/>
+             </div>
            </div>
            <div>
              <h1>MySQL</h1>
-             <img className='mysql-img' src={require('./resources/icons/icon_mysql.png')}alt=''/>
+             <div className="mysql-wrapper">
+               <img className='mysql-img' src={require('./resources/icons/mysql.png')}alt=''/>
+             </div>
            </div>
 
          </div>
