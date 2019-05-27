@@ -201,7 +201,7 @@ class Home extends Component {
        </div>
        <div className='footer'>
 
-         <h1 className='footer-text'>Joshua Pawlik © 2018</h1>
+         <h1 className='footer-text'>Joshua Pawlik © 2019</h1>
 
          {/*{this.state.show ?
            <div className="stuff">

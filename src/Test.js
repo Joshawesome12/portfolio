@@ -6,11 +6,22 @@ class Test extends Component {
 	constructor(props) {
     super(props);
     this.state = {
+			imageStatus:
+			<div className="spinner">
+        <div className="loader"/>
+      </div>,
+			visibility:"hidden"
     }
   }
 
 
 	componentDidMount(){
+  }
+
+	handleImageLoaded = () => {
+    this.setState({imageStatus: null}, () => {
+      this.setState({visibility:""});
+    })
   }
 
 	render(){
@@ -43,7 +54,25 @@ class Test extends Component {
 
 		return (
 			<div>
-			<h1>TESTING</h1>
+				<div className="testContent">
+					<h1 className="info">Photo featured in this article:</h1>
+
+					<div className="iframeContainer">
+					<iframe
+						title="statesman"
+						className={this.state.visibility}
+						id="iframe"
+		        src="https://www.statesman.com/news/20171204/commentary-its-time-for-texas-to-step-up-on-computer-science"
+		        width="700px"
+		        height="500px"
+						onLoad={this.handleImageLoaded.bind(this)}
+		        frameBorder="0"
+		        marginHeight="0"
+		        marginWidth="0"
+		        />
+						{this.state.imageStatus}
+					</div>
+				</div>
 			</div>
 		);
 	}
