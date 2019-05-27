@@ -199,9 +199,7 @@ class Home extends Component {
 
          </div>
        </div>
-       <div className='footer'>
-
-         <h1 className='footer-text'>Joshua Pawlik © 2019</h1>
+       <div>
 
          {/*{this.state.show ?
            <div className="stuff">

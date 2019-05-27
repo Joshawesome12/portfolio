@@ -64,7 +64,12 @@ class App extends Component {
 
             <Route exact={true} path="/" component={Home}/>
             <Route exact={true} path="/test" component={Test}/>
+
+            <div className='footer'>
+              <h1 className='footer-text'>Joshua Pawlik © 2019</h1>
+            </div>
         </div>
+
     );
   }
 }
