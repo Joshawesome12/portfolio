@@ -69,6 +69,9 @@ class Test extends Component {
 		        frameBorder="0"
 		        marginHeight="0"
 		        marginWidth="0"
+						gesture="media"
+						allow="encrypted-media"
+						allowfullscreen
 		        />
 						{this.state.imageStatus}
 					</div>
